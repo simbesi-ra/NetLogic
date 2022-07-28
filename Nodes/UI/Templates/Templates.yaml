@@ -1,0 +1,101 @@
+Name: Templates
+Id: g=0c02c9dabd866674397c282052ee7769
+Type: FolderType
+Children:
+- Name: ToggleLed
+  Id: g=9df8e79647daad73f4305c1e73106061
+  Supertype: Rectangle
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=c8d6e31840a0712f5f25958500a5ac01
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 190.0
+  - Name: Height
+    Id: g=08a292d78cbebd425558f56c9534b38d
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 100.0
+  - Name: BorderThickness
+    Id: g=a83db7b6d8165c053e49a8acb6d041cb
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1.0
+  - Name: LED1
+    Id: g=db46f20016090d39b51c64f9a7e453f9
+    Type: Led
+    Children:
+    - Name: Active
+      Id: g=e32106482d08c76cc832a044068edb60
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Id: g=3acec301baa3cb4dadf454b53b8b4bc2
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../Switch1/Checked"
+    - Name: Width
+      Id: g=7e878ce330b6aac12e116a6146ef9f07
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Id: g=fa2d2d69323ac547432a8c48296b9dd8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: LeftMargin
+      Id: g=7b27fcddbac9881dde4dd8bf21975496
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TopMargin
+      Id: g=3faaf94cbce45b488c43c44cf9c8f451
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: Switch1
+    Id: g=b553cc073230cef5e1300b0eff5e093f
+    Type: Switch
+    Children:
+    - Name: Checked
+      Id: g=9bf8f9f5b3addf3401d2179106ae6375
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Id: g=3bb58104025329dcfae030cb4b119376
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: LeftMargin
+      Id: g=bfbe1e569122984b73139720b7ea7a61
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: TopMargin
+      Id: g=8ff4ac45c272e184687bfab386a4c4dd
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 33.0
+    - Name: Enabled
+      Id: g=e79f75e911c9eca63c6d826c5af285fa
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+  - Name: LampeggioLed
+    Id: g=435c7fee38ac9ddf8fc0408840554d7e
+    Type: NetLogic

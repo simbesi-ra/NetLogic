@@ -1,0 +1,34 @@
+Name: NetLogic
+Id: g=7d01c4a6a897d135015ca567f60263f6
+Type: FolderType
+Children:
+- Name: DesignTimeNetLogic1
+  Id: g=ff275780c047f07c22483ccf704d7ec5
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=0a1a3921fa41713b7097108531b7bc89
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: Create100Variables
+    Id: g=46064b185bcd6ecce985007132e612b5
+  - Class: Method
+    Name: CreateLabel
+    Id: g=1080dcf8d2c1c1398f12df246d49a468
+  - Class: Method
+    Name: ModificaLabel
+    Id: g=b2f7549293c257ffee250f28dc4c0602
+  - Class: Method
+    Name: ModificaValNative
+    Id: g=53785b27f8e6af9d289523e02772c8c9
+  - Class: Method
+    Name: AggiungiButton
+    Id: g=755204ab4a169acca7bef103d2ab812b
+  - Class: Method
+    Name: Aggiungi10Pulsanti
+    Id: g=b270eab41148ab82a6a8a94a839fbf8a
+  - Class: Method
+    Name: CancellaVarDispari
+    Id: g=f96d62b4606a81fa20b8775ff46c3b36
